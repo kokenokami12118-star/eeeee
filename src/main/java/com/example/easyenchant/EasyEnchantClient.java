@@ -23,7 +23,7 @@ public class EasyEnchantClient implements ClientModInitializer {
             if (openRequested) {
                 openRequested = false;
                 if (mc.player != null) {
-                    mc.setScreen(new EnchantScreen());
+                    mc.setScreenAndShow(new EnchantScreen());
                 }
             }
         });
