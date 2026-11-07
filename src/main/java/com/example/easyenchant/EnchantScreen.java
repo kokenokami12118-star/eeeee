@@ -66,7 +66,6 @@ public class EnchantScreen extends Screen {
         // レベル入力
         levelBox = new EditBox(this.font, cx - 100, top + 208, 60, 20, Component.literal("レベル"));
         levelBox.setMaxLength(3);
-        levelBox.setFilter(s -> s.matches("\\d{0,3}"));
         levelBox.setValue("255");
         addRenderableWidget(levelBox);
 
